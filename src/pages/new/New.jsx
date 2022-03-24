@@ -37,15 +37,40 @@ function New({ inputs, title }) {
                                 <input type="file" onChange={(e) => setFile(e.target.files[0])} id="file" style={{ display: "none" }} />
                             </div>
 
-                            {inputs.map((input) => (
-                                <div className="formInput" key={input.id}>
-                                    <label>{input.label}</label>
-                                    <input type={input.type} placeholder={input.placeholder} />
-                                </div>
+                            {inputs.map((input) => {
+                                if (input.type !== "select") {
+                                    return (<div className="formInput" key={input.id}>
+                                        <label>{input.label}</label>
+                                        <input type={input.type} placeholder={input.placeholder} />
+                                    </div>)
+                                }
+                            })}
 
-                            ))}
+                            <div className="formInput" >
+                                <label htmlFor='lang'>Language</label>
+                                <select name="lang" id="lang" placeholder='Choose Language...'>
+                                    {
+                                        inputs.map((input) => {
+                                            if (input.name === "language") {
+                                                return (
+                                                    input.value.map(lang => {
+                                                        return (<option key={input.id} value={lang}  >
+                                                            {lang}
+                                                        </option>)
+                                                    })
+                                                )
+                                            }
+                                        })
+                                    }
+                                </select>
+                            </div>
 
-                            <button>Add </button>
+
+
+                            <div className="formInput">
+                                <button>Add </button>
+
+                            </div>
                         </form>
                     </div>
                 </div>

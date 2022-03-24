@@ -3,25 +3,25 @@ export const userInputs = [
       id: 1,
       label: "Username",
       type: "text",
-      placeholder: "john_doe",
+      placeholder: "evez_aslanov",
     },
     {
       id: 2,
       label: "Name and surname",
       type: "text",
-      placeholder: "John Doe",
+      placeholder: "Evez Aslanov",
     },
     {
       id: 3,
       label: "Email",
       type: "mail",
-      placeholder: "john_doe@gmail.com",
+      placeholder: "evez.aslanov.94@gmail.com",
     },
     {
       id: 4,
       label: "Phone",
       type: "text",
-      placeholder: "+1 234 567 89",
+      placeholder: "+99477 520 33 16",
     },
     {
       id: 5,
@@ -32,16 +32,18 @@ export const userInputs = [
       id: 6,
       label: "Address",
       type: "text",
-      placeholder: "Elton St. 216 NewYork",
+      placeholder: "Absheron Eliaga Vahid",
     },
     {
       id: 7,
       label: "Country",
       type: "text",
-      placeholder: "USA",
+      placeholder: "Azerbaijan",
     },
   ];
   
+  const lang = ['aze','tr','eng','pol','rus']
+  const category = ['drama','trailer','detective','roman','history']
   export const productInputs = [
     {
       id: 1,
@@ -51,15 +53,17 @@ export const userInputs = [
     },
     {
       id: 2,
-      label: "Description",
+      label: "Author",
       type: "text",
-      placeholder: "Description",
+      placeholder: "Author",
     },
     {
       id: 3,
       label: "Category",
-      type: "text",
-      placeholder: "Computers",
+      type: "select",
+      name:"category",
+      value:category
+
     },
     {
       id: 4,
@@ -69,9 +73,35 @@ export const userInputs = [
     },
     {
       id: 5,
+      label: "Language",
+      type: "select",
+      name:"language",
+      value:lang
+    },
+    {
+      id: 6,
+      label: "Publishing House",
+      type: "text",
+      placeholder: "Publishing house",
+    }, 
+    {
+      id: 7,
+      label: "Description",
+      type: "text",
+      placeholder: "Description",
+    },
+    {
+      id: 8,
       label: "Stock",
       type: "text",
       placeholder: "in stock",
     },
+    {
+      id: 9 ,
+      label: "Comment",
+      type: "text",
+      placeholder: "Comment",
+    }  
+    
   ];
   

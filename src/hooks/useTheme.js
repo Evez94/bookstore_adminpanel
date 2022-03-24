@@ -7,6 +7,5 @@ export const useTheme = () => {
     if(context === undefined) {
         throw new Error("useTheme() must be use in DarkModeContextProvider")
     }
- // burada deyisiklik oldu
     return context
 }
