@@ -8,6 +8,7 @@ import Chart from '../../components/chart/Chart'
 import Table from '../../components/table/Table'
 
 function Home() {
+
     return (
         <div className='home'>
             <Sidebar />
@@ -31,6 +32,7 @@ function Home() {
                 </div>
 
             </div>
+
         </div>
     )
 }

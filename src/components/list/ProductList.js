@@ -4,6 +4,8 @@ import Navbar from '../navbar/Navbar'
 import Datatable from '../datatable/Datatable'
 
 function ProductList() {
+
+    
     return (
         <div className='product_list'>
             <Sidebar />
